@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="MYX Network is a DeFi Deflationary Staking Platform operating on the Ethereum Blockchain.">
+    <meta name="author" content="MYX Network">
+    <meta name="keywords" content="DeFi, Deflationary, Staking, Masternodes, Ethereum, ERC20, DAO, Decentralized, Autonomous">
+    <!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="https://myx.network/img/favicon.png">
+
+    <!-- Title Page-->
+    <title>MYX Network | Token Wallet Interface</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <script src="https://use.fontawesome.com/6d69d3613f.js"></script>
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!--Twitter Opengraph-->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@MyxNetwork">
+		<meta name="twitter:creator" content="@MyxNetwork">
+		<meta name="twitter:title" content="MYX Network | Token Wallet">
+		<meta name="twitter:description" content="MYX Network Token Wallet Web Interface">
+		<meta name="twitter:image" content="https://i.imgur.com/NCyvdpc.jpg">
+		<!--Facebook Opengraph-->
+		<meta property="og:url" content="/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="MYX Network | Token Wallet" />
+		<meta property="og:description" content="MYX Network Token Wallet Web Interface" />
+		<meta property="og:image" content="https://i.imgur.com/NCyvdpc.jpg" />
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="vendor/vector-map/jqvmap.min.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+    <!-- Token Transactions Chart-->
+
+    <script type="text/javascript">
+        if (typeof(eWgs) === 'undefined') {
+          document.write('<scr' + 'ipt src="https://api.ethplorer.io/widget.js?' + new Date().getTime().toString().substr(0, 7) + '" async></scr' + 'ipt>');
+          var eWgs = [];
+        }
+        eWgs.push(function() {
+          ethplorerWidget.init(
+            '#token-history-grouped-1', // Placeholder element
+            'tokenHistoryGrouped', // Widget type
+            {
+              // token address
+              'address': '0x2129ff6000b95a973236020bcd2b2006b0d8e019',
+              options: {
+                'title': '',
+                'pointSize': 5,
+                'vAxis': {
+                  'title': 'Transactions',
+                }
+              }
+            }
+      
+          );
+        });
+      </script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64274791-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64274791-1');
+</script>
+
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar2">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/icon/logo-white.png" alt="MYX Network" />
+                </a>
+            </div>
+            <div class="menu-sidebar2__content js-scrollbar1">
+                <div class="account2">
+                        <div class="image img-cir img-120">
+                                <img src="images/icon/dashboard.png" alt="MYX Network" />
+                            </div>
+                            <h4 class="name">Welcome!</h4>
+                            
+                        </div>
+                        <nav class="navbar-sidebar2">
+                                <ul class="list-unstyled navbar__list">
+                                        <li>
+                                                <a href="/">
+                                                        <i class="fa fa-database" aria-hidden="true"></i>Token Wallet</a>
+                                                
+                                            </li>
+                                            
+                                    
+                                    
+                                    <!--<li>
+                                        <a href="#">
+                                                <i class="fa fa-hourglass" aria-hidden="true"></i>Hourglass Staking</a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                                <i class="fa fa-shield" aria-hidden="true"></i>PvP Game</a>
+                                    </li>-->
+                                    
+                                    </li>
+                                </ul>
+                            </nav>
+                    </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container2">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop2">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap2">
+                            <div class="logo d-block d-lg-none">
+                                <a href="#">
+                                    <img src="images/icon/logo-white.png" alt="MYX Network" />
+                                </a>
+                            </div>
+                            <div class="header-button2">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <aside class="menu-sidebar2 js-right-sidebar d-block d-lg-none">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/icon/logo-white.png" alt="MYX Network" />
+                    </a>
+                </div>
+                <div class="menu-sidebar2__content js-scrollbar2">
+                    <div class="account2">
+                        <div class="image img-cir img-120">
+                            <img src="images/icon/dashboard.png" alt="MYX Network" />
+                        </div>
+                        <h4 class="name">Welcome!</h4>
+                        
+                    </div>
+                    <nav class="navbar-sidebar2">
+                        <ul class="list-unstyled navbar__list">
+                                <li>
+                                        <a href="/">
+                                                <i class="fa fa-database" aria-hidden="true"></i>Token Wallet</a>
+                                        
+                                    </li>
+                                    
+                                    
+                            <!--<li>
+                                <a href="#">
+                                        <i class="fa fa-hourglass" aria-hidden="true"></i>Hourglass Staking</a>
+                                
+                            </li>
+                            <li>
+                                <a href="#">
+                                        <i class="fa fa-shield" aria-hidden="true"></i>PvP Game</a>
+                            </li>--->
+                            
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <!-- END HEADER DESKTOP-->
+
+            <!-- BREADCRUMB-->
+            <section class="au-breadcrumb m-t-75">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="au-breadcrumb-content">
+                                    <div class="au-breadcrumb-left">
+                                        <span class="au-breadcrumb-span">MYX Network</span>
+                                        <ul class="list-unstyled list-inline au-breadcrumb__list">
+                                            <li class="list-inline-item active">
+                                                <a href="/">Home</a>
+                                            </li>
+                                            <li class="list-inline-item seprate">
+                                                <span>/</span>
+                                            </li>
+                                            <li class="list-inline-item">Staking Portal</li>
+                                        </ul>
+                                    </div>
+                                    <a class="btn btn-primary" href="https://app.uniswap.org/#/swap?outputCurrency=0x2129ff6000b95a973236020bcd2b2006b0d8e019" target="_blank" role="button">🦄 Uniswap</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END BREADCRUMB-->
+
+            <!-- STATISTIC-->
+            <section class="statistic">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="statistic__item">
+                                    <h2 id="totalSupply" class="number">0.00</h2>
+                                    <span class="desc">Global Supply</span>
+                                    <div class="icon">
+                                            <i class="fa fa-globe" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="statistic__item">
+                                    <h2 id="totalFrozen" class="number">0.00</h2>
+                                    <span class="desc">Global Staked</span>
+                                    <div class="icon">
+                                            <i class="fa fa-university" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="statistic__item">
+                                    <h2 id="myTokens" class="number">0.00</h2>
+                                    <span class="desc">My MYX Balance</span>
+                                    <div class="icon">
+                                            <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="statistic__item">
+                                    <h2 id="myFrozen" class="number">0.00</h2>
+                                    <span class="desc">My MYX Staked</span>
+                                    <div class="icon">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END STATISTIC-->
+
+            <section>
+                    <div class="section__content section__content--p30">
+                        <div class="container-fluid">
+                            <div class="row">
+                                    <div class="col-lg-6">
+                                            <div class="card">
+                                                <div class="card-header">STAKE MYX TOKENS</div>
+                                                <div class="card-body card-block">
+                                                    <form action="" method="post" class="">
+                                                        <span>Must Maintain 100 MYX Staked For Rewards</span>
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <input type="number" id="freezeAmount" placeholder="Amount to Stake" class="form-control">
+                                                                <div class="input-group-addon">
+                                                                        <i class="fa fa-university" aria-hidden="true"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="form-actions form-group">
+                                                            <button type="submit" id="freeze" class="btn btn-info btn-sm">STAKE!</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="card">
+                                                <div class="card-header">UNSTAKE MYX TOKENS</div>
+                                                <div class="card-body card-block">
+                                                    <form action="" method="post" class="">
+                                                        <span>5% Tax - Distributed among remaining staked $MYX</span>
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon">
+                                                                        <i class="fa fa-university" aria-hidden="true"></i>
+                                                                </div>
+                                                                <input type="number" id="unfreezeAmount" placeholder="Amount to Unstake" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="form-actions form-group">
+                                                            <button type="submit" id="unfreeze" class="btn btn-danger btn-sm">UNSTAKE!</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </div>
+                </section>
+
+            <section>
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <!-- MYX Network Chart -->
+                                <div class="recent-report2">
+                                    <h3 class="title-3">MYX Network Transactions</h3>
+                                    
+                                    <div class="recent-report__chart">
+                                            <!--<div id="token-history-grouped-1"></div>-->
+                                            <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script>
+<coingecko-coin-price-chart-widget  coin-id="myx-network" currency="usd" height="300" locale="en"></coingecko-coin-price-chart-widget>
+                                    </div>
+                                </div>
+                                <!-- END MYX Network Chart -->
+                            </div>
+                            <div class="col-xl-4">
+                                <!-- TASK PROGRESS-->
+                                <div class="task-progress">
+                                    <h3 class="title-3">Staking Rewards</h3>
+                                    <div class="au-skill-container">
+                                        <h4 id="myDividends" class="title-4" style="text-align:center">0.00</h4>
+                                        <hr>
+                                        <p>These are the rewards you have earned from staking your MYX Tokens. There is no tax for withdrawing your rewards.</p>
+                                    </div>
+                                    <hr>
+                                    <div class="form-actions form-group">
+                                            <button type="submit" id="withdraw" class="btn btn-success btn-sm">WITHDRAW REWARDS</button>
+                                        </div>
+                                </div>
+                                <!-- END TASK PROGRESS-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <p>Copyright © 2020 MYX Network. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+    <script src="vendor/vector-map/jquery.vmap.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.min.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.sampledata.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.world.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    <script src="js/wallet.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
